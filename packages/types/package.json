@@ -1,0 +1,39 @@
+{
+  "name": "gasp-types",
+  "version": "0.0.1",
+  "description": "Polkadot.js type definitions for GASP Network",
+  "author": "Gasp <solutions@gasp.xyz>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mangata-finance/gasp-dev-kit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mangata",
+    "types"
+  ],
+  "license": "GPL-3.0",
+  "peerDependencies": {
+    "@polkadot/api": "^11.1.1"
+  },
+  "type": "module",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./*": {
+      "types": "./src/*.d.ts",
+      "import": "./src/*.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "private": false
+}

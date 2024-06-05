@@ -1,0 +1,35 @@
+{
+  "name": "gasp-type-definitions",
+  "version": "0.0.1",
+  "description": "Type definitions for Gasp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mangata-finance/gasp-dev-kit"
+  },
+  "peerDependencies": {
+    "@polkadot/types": "^11.1.1"
+  },
+  "keywords": [
+    "mangata",
+    "type",
+    "definitions"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "GPL-3.0",
+  "type": "module",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "private": false
+}

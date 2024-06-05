@@ -1,5 +1,5 @@
 import { ApiOptions } from "@polkadot/api/types";
-import { mTypes, mRpc } from "@mangata-finance/type-definitions";
+import { mTypes, mRpc } from "gasp-type-definitions";
 
 export const options = ({
   types = {},

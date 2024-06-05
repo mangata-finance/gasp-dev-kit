@@ -1,4 +1,4 @@
-import "@mangata-finance/types";
+import "gasp-types";
 import { PriceImpact } from "./types/utility";
 import { getPriceImpact } from "./utils/getPriceImpact";
 import { createMangataInstance } from "./mangataInstance";

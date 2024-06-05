@@ -1,7 +1,7 @@
 ## Mangata Finance SDK
 
 <p>
-    The Mangata SDK is a comprehensive toolset designed for facilitating seamless communication with the Mangata node.
+    The GASP SDK is a comprehensive toolset designed for facilitating seamless communication with the Mangata node.
 </p>
 
 ![Artwork](https://blog.mangata.finance/assets/posts/themis-cover.png)
@@ -15,16 +15,16 @@
 
 # Getting Started
 
-The Mangata SDK is the TypeScript library that offers a wide range of convenient methods for effortlessly buying and selling assets on the Mangata DEX. Its primary objective is to streamline the development process for client applications, specifically targeting algorithmic traders and frontend interface builders. By utilizing the Mangata SDK, developers can significantly reduce time and effort required to integrate with the platform.
+The GASP SDK is the TypeScript library that offers a wide range of convenient methods for effortlessly buying and selling assets on the Mangata DEX. Its primary objective is to streamline the development process for client applications, specifically targeting algorithmic traders and frontend interface builders. By utilizing the Mangata SDK, developers can significantly reduce time and effort required to integrate with the platform.
 
 ## Installation
 
 ```sh
 // with npm
-npm i @mangata-finance/sdk
+npm i gasp-sdk
 
 // with yarn
-yarn add @mangata-finance/sdk
+yarn add gasp-sdk
 ```
 
 ## Migration from v1 to v2

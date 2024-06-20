@@ -409,6 +409,7 @@ declare module '@polkadot/types/lookup' {
     readonly isTransactionFeePaid: boolean;
     readonly asTransactionFeePaid: {
       readonly who: SpRuntimeAccountAccountId20;
+      readonly tokenId: u32;
       readonly actualFee: u128;
       readonly tip: u128;
     } & Struct;

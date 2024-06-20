@@ -628,7 +628,7 @@ declare module '@polkadot/api-base/types/events' {
        * A transaction fee `actual_fee`, of which `tip` was added to the minimum inclusion fee,
        * has been paid by `who`.
        **/
-      TransactionFeePaid: AugmentedEvent<ApiType, [who: SpRuntimeAccountAccountId20, actualFee: u128, tip: u128], { who: SpRuntimeAccountAccountId20, actualFee: u128, tip: u128 }>;
+      TransactionFeePaid: AugmentedEvent<ApiType, [who: SpRuntimeAccountAccountId20, tokenId: u32, actualFee: u128, tip: u128], { who: SpRuntimeAccountAccountId20, tokenId: u32, actualFee: u128, tip: u128 }>;
       /**
        * Generic event
        **/

@@ -368,6 +368,7 @@ export default {
     _enum: {
       TransactionFeePaid: {
         who: 'SpRuntimeAccountAccountId20',
+        tokenId: 'u32',
         actualFee: 'u128',
         tip: 'u128'
       }

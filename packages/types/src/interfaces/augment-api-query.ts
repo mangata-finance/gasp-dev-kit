@@ -458,11 +458,8 @@ declare module '@polkadot/api-base/types/storage' {
     };
     sequencerStaking: {
       activeSequencers: AugmentedQuery<ApiType, () => Observable<BTreeMap<PalletRolldownMessagesChain, Vec<SpRuntimeAccountAccountId20>>>, []> & QueryableStorageEntry<ApiType, []>;
-      currentRound: AugmentedQuery<ApiType, () => Observable<u32>, []> & QueryableStorageEntry<ApiType, []>;
-      eligibleToBeSequencers: AugmentedQuery<ApiType, () => Observable<BTreeMap<SpRuntimeAccountAccountId20, u32>>, []> & QueryableStorageEntry<ApiType, []>;
       minimalStakeAmount: AugmentedQuery<ApiType, () => Observable<u128>, []> & QueryableStorageEntry<ApiType, []>;
       nextSequencerIndex: AugmentedQuery<ApiType, () => Observable<BTreeMap<PalletRolldownMessagesChain, u32>>, []> & QueryableStorageEntry<ApiType, []>;
-      roundCollators: AugmentedQuery<ApiType, (arg: u32 | AnyNumber | Uint8Array) => Observable<Vec<SpRuntimeAccountAccountId20>>, [u32]> & QueryableStorageEntry<ApiType, [u32]>;
       selectedSequencer: AugmentedQuery<ApiType, () => Observable<BTreeMap<PalletRolldownMessagesChain, SpRuntimeAccountAccountId20>>, []> & QueryableStorageEntry<ApiType, []>;
       sequencerStake: AugmentedQuery<ApiType, (arg: ITuple<[SpRuntimeAccountAccountId20, PalletRolldownMessagesChain]> | [SpRuntimeAccountAccountId20 | string | Uint8Array, PalletRolldownMessagesChain | 'Ethereum' | 'Arbitrum' | number | Uint8Array]) => Observable<u128>, [ITuple<[SpRuntimeAccountAccountId20, PalletRolldownMessagesChain]>]> & QueryableStorageEntry<ApiType, [ITuple<[SpRuntimeAccountAccountId20, PalletRolldownMessagesChain]>]>;
       slashFineAmount: AugmentedQuery<ApiType, () => Observable<u128>, []> & QueryableStorageEntry<ApiType, []>;

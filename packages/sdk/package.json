@@ -26,11 +26,12 @@
     "gasp-types": "0.0.2-eth-rollup-develop.14"
   },
   "dependencies": {
-    "@metamask/sdk": "0.16.0",
     "gasp-type-definitions": "0.0.2-eth-rollup-develop.15",
     "big.js": "6.2.1",
+    "tslib": "^2.3.0",
     "tslog": "4.8.2",
-    "tslib": "^2.3.0"
+    "viem": "^2.17.4",
+    "wagmi": "^2.10.10"
   },
   "exports": {
     ".": {

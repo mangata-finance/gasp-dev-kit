@@ -17,7 +17,7 @@ import { truncatedString } from './truncatedString';
 import { getTxError } from './getTxError';
 import { logger } from './mangataLogger';
 import { hexToU8a } from '@polkadot/util';
-import { signTypedData_v4 } from './metamaskSigning';
+import { signTypedData_v4 } from './signTypedData';
 
 const subscribeToExtrinsic = async (
   api: ApiPromise,
@@ -166,7 +166,7 @@ export const signTx = async (
       const subscriptionState = { isSubscribed: false };
 
       if (txOptions?.wagmiConfig) {
-        const metamaskTx = api.createType(
+        const transaction = api.createType(
           'Extrinsic',
           { method: tx.method },
           { version: tx.version }
@@ -187,18 +187,18 @@ export const signTx = async (
 
         const created_signature = api.createType('EthereumSignature', hexToU8a(signature));
         
-        metamaskTx.addSignature(
+        transaction.addSignature(
           address,
           created_signature,
           payload.toHex()
         );
 
         const unsub = await api.rpc.author.submitAndWatchExtrinsic(
-          metamaskTx,
+          transaction,
           async (status) => {
             await subscribeToExtrinsic(
               api,
-              metamaskTx,
+              transaction,
               { status },
               extractedAccount,
               txOptions,

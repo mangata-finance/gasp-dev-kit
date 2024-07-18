@@ -65,7 +65,7 @@ function makeSignOptions(api: ApiPromise, partialOptions: Partial<SignatureOptio
 
 export async function signTypedData_v4(api: ApiPromise, tx: SubmittableExtrinsic<"promise">, config: Config, address?: string): Promise<SignTypedData_v4> {
   const options: Partial<SignatureOptions> = {};
- 
+
   if (!address) {
     throw new Error('No address found');
   }

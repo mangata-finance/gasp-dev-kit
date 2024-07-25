@@ -725,6 +725,7 @@ declare module '@polkadot/api-base/types/errors' {
       CantUnstakeWhileInActiveSet: AugmentedError<ApiType>;
       MathOverflow: AugmentedError<ApiType>;
       MaxSequencersLimitReached: AugmentedError<ApiType>;
+      NoStakeToUnStake: AugmentedError<ApiType>;
       NotEnoughSequencerStake: AugmentedError<ApiType>;
       OperationFailed: AugmentedError<ApiType>;
       SequencerAlreadyInActiveSet: AugmentedError<ApiType>;

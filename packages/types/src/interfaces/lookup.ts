@@ -2749,7 +2749,7 @@ export default {
    * Lookup401: pallet_sequencer_staking::pallet::Error<T>
    **/
   PalletSequencerStakingError: {
-    _enum: ['OperationFailed', 'MathOverflow', 'SequencerIsNotInActiveSet', 'SequencerAlreadyInActiveSet', 'CantUnstakeWhileInActiveSet', 'NotEnoughSequencerStake', 'MaxSequencersLimitReached', 'TestUnstakingError', 'UnknownChainId']
+    _enum: ['OperationFailed', 'MathOverflow', 'SequencerIsNotInActiveSet', 'SequencerAlreadyInActiveSet', 'CantUnstakeWhileInActiveSet', 'NotEnoughSequencerStake', 'MaxSequencersLimitReached', 'TestUnstakingError', 'UnknownChainId', 'NoStakeToUnStake']
   },
   /**
    * Lookup405: sp_core::crypto::KeyTypeId

@@ -459,7 +459,7 @@ declare module '@polkadot/api-base/types/events' {
   } & Struct, H256]>]>;
       RequestProcessedOnL2: AugmentedEvent<ApiType, [PalletRolldownMessagesChain, u128]>;
       TxBatchCreated: AugmentedEvent<ApiType, [chain: PalletRolldownMessagesChain, source: PalletRolldownBatchSource, assignee: SpRuntimeAccountAccountId20, batchId: u128, range: ITuple<[u128, u128]>], { chain: PalletRolldownMessagesChain, source: PalletRolldownBatchSource, assignee: SpRuntimeAccountAccountId20, batchId: u128, range: ITuple<[u128, u128]> }>;
-      WithdrawlRequestCreated: AugmentedEvent<ApiType, [chain: PalletRolldownMessagesChain, requestId: PalletRolldownMessagesRequestId, recipient: U8aFixed, tokenAddress: U8aFixed, amount: u128], { chain: PalletRolldownMessagesChain, requestId: PalletRolldownMessagesRequestId, recipient: U8aFixed, tokenAddress: U8aFixed, amount: u128 }>;
+      WithdrawlRequestCreated: AugmentedEvent<ApiType, [chain: PalletRolldownMessagesChain, requestId: PalletRolldownMessagesRequestId, recipient: U8aFixed, tokenAddress: U8aFixed, amount: u128, hash_: H256], { chain: PalletRolldownMessagesChain, requestId: PalletRolldownMessagesRequestId, recipient: U8aFixed, tokenAddress: U8aFixed, amount: u128, hash_: H256 }>;
       /**
        * Generic event
        **/
